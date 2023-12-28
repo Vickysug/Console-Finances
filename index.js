@@ -1,16 +1,26 @@
 
-//create a function that has an array of financial// 
-// data. The function will calculate // 
-//the total months, total, average change, greatest // 
-//increase, and greatest decrease. //
+//create a function that has an array of financial
+// data. The function will calculate 
+//the total months, total, average change, greatest  
+//increase, and greatest decrease. 
 
 function financialAnalysis(data) {
-  // Initialize variables
+  // variables
   let totalMonths = 0;
   let total = 0;
+  //By setting the value to -Infinity, it ensures that the first encountered change will always be considered as the greatest increase until a larger value is found  
   let greatestIncrease = { month: '', value: -Infinity };
   let greatestDecrease = { month: '', value: Infinity };
   let totalChange = 0;
+
+  // each entry in the data
+  for (let i = 0; i < data.length; i++) {
+    const entry = data[i];
+    const month = entry[0];
+    const amount = entry[1];
+
+    // calculate total
+    total += amount;
 
 
 
