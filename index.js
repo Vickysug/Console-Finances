@@ -148,3 +148,8 @@ const financialData =  [
 
 
 
+//Heading
+console.log("Financial Analysis")
+// call the function and print the result
+const analysisResult = financialAnalysis(financialData);
+console.log(analysisResult);
