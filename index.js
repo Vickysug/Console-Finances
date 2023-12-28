@@ -1,3 +1,19 @@
+
+//create a function that has an array of financial// 
+// data. The function will calculate // 
+//the total months, total, average change, greatest // 
+//increase, and greatest decrease. //
+
+function financialAnalysis(data) {
+  // Initialize variables
+  let totalMonths = 0;
+  let total = 0;
+  let greatestIncrease = { month: '', value: -Infinity };
+  let greatestDecrease = { month: '', value: Infinity };
+  let totalChange = 0;
+
+
+
 var finances = [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
