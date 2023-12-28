@@ -40,8 +40,24 @@ function financialAnalysis(data) {
     totalMonths++;
   }
 
+  //average change
+  const averageChange = totalChange / (totalMonths - 1);
 
-var finances = [
+  //the output
+  const result = `
+  ----------------
+  Total Months: ${totalMonths}
+  Total: $${total}
+  Average Change: $${averageChange.toFixed(2)}
+  Greatest Increase in Profits/Losses: ${greatestIncrease.month} ($${greatestIncrease.value})
+  Greatest Decrease in Profits/Losses: ${greatestDecrease.month} ($${greatestDecrease.value})
+  `;
+
+  return result;
+}
+
+// data
+const financialData =  [
   ['Jan-2010', 867884],
   ['Feb-2010', 984655],
   ['Mar-2010', 322013],
@@ -129,3 +145,6 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+
+
