@@ -2,7 +2,7 @@
 //create a function that has an array of financial
 // data. The function will calculate 
 //the total months, total, average change, greatest  
-//increase, and greatest decrease. 
+//increase, and greatest decrease.
 
 function financialAnalysis(data) {
   // variables
