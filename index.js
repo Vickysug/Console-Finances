@@ -19,9 +19,26 @@ function financialAnalysis(data) {
     const month = entry[0];
     const amount = entry[1];
 
-    // calculate total
+    //calculate total
     total += amount;
 
+    //calculate change using if statement
+    if (i > 0) {
+      const change = amount - data[i - 1][1];
+      totalChange += change;
+
+      //greatest increase and decrease
+      if (change > greatestIncrease.value) {
+        greatestIncrease = { month, value: change };
+      }
+      if (change < greatestDecrease.value) {
+        greatestDecrease = { month, value: change };
+      }
+    }
+
+    // total months
+    totalMonths++;
+  }
 
 
 var finances = [
