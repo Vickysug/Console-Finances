@@ -48,4 +48,6 @@ My final code should print the analysis to the console.
 
 * How do I only print to the nearest 100th in JavaScript?
 
+## Screenshot of finished project and link to deployed application
 
+![Alt text](image.png)
